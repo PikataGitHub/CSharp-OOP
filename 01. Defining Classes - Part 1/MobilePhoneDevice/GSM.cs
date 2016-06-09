@@ -1,13 +1,15 @@
 ﻿namespace MobilePhoneDevice
 {
+    using System.Text;
+
     public class GSM
     {
-        readonly string model;
-        readonly string manufacturer;
-        int price;
-        string owner;
-        private Display display = new Display();
-        private Battery battery = new Battery();
+        private string model;
+        private string manufacturer;
+        private int price;
+        private string owner;
+        private Display displayInfo = new Display();
+        private Battery batteryInfo = new Battery();
 
         public GSM(string modelOfGSM, string manufacturerOfGSM)
         {
@@ -15,11 +17,21 @@
             this.manufacturer = manufacturerOfGSM;
         }
 
-        public GSM(string modelOfGSM, string manufacturerOfGSM, Display displayOfGSM, Battery batteryOfGSM) : this(modelOfGSM, manufacturerOfGSM)
+        public GSM(string modelOfGSM, string manufacturerOfGSM, int priceOfGSM, string ownerOfGSM, Display displayOfGSM, Battery batteryOfGSM) : this(modelOfGSM, manufacturerOfGSM)
         {
+            this.price = priceOfGSM;
+            this.owner = ownerOfGSM;
+            this.displayInfo = displayOfGSM;
+            this.batteryInfo = batteryOfGSM;
+        }
 
-            this.display = displayOfGSM;
-            this.battery = batteryOfGSM;
+
+        public override string ToString()
+        {
+            var informationAboutGSM = new StringBuilder();
+
+
+            return base.ToString();
         }
     }
 }
