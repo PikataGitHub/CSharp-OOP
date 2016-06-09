@@ -4,7 +4,7 @@
     {
         static void Main()
         {
-            GSM phone = new GSM("Nokia");
+            GSM phone = new GSM("GT-9000", "SAMSUNG");
 
             System.Console.WriteLine(phone);
 
