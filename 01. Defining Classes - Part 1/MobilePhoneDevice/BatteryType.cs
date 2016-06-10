@@ -1,6 +1,5 @@
 ﻿namespace MobilePhoneDevice
 {
-
     public enum BatteryType
     {       
         NiMH,
