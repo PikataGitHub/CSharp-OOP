@@ -12,6 +12,22 @@
 
             System.Console.WriteLine(nokiabattery.HoursIdle.Elapsed);
 
+            GSM phoneTes = new GSM("galaxy III", "SAMSUNG");
+
+            System.Console.WriteLine(phoneTes.PriceOfGSM);
+
+
+            phoneTes.DisplayInformation = new Display(654);
+
+
+            phoneTes.BatteryInformation = new Battery("square", BatteryType.NiMH);
+
+            //System.Console.WriteLine(phoneTes.BatteryInformation.BatteryType);
+            phoneTes.OwnerOfGSM = "Dimitar";
+           System.Console.WriteLine(phoneTes.OwnerOfGSM);
+            System.Console.WriteLine(phone.DisplayInformation.NumberOfColoursOfDisplay.ToString());
+            System.Console.WriteLine(phoneTes.DisplayInformation.NumberOfColoursOfDisplay);
+            System.Console.WriteLine(phoneTes.DisplayInformation.SizeOfDisplay);
         }
     }
 }

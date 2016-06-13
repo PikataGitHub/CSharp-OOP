@@ -7,9 +7,18 @@
         private double displaySize;
         private int numberOfColours;
 
-        public Display(double sizeOfDisplay, int numberOfColoursOfDisplay)
+        public Display(double sizeOfDisplay)
         {
             this.SizeOfDisplay = sizeOfDisplay;
+        }
+
+        public Display(int numberOfColoursOfDisplay)
+        {
+            this.NumberOfColoursOfDisplay = numberOfColoursOfDisplay;
+        }
+
+        public Display(double sizeOfDisplay, int numberOfColoursOfDisplay) : this(sizeOfDisplay)
+        {
             this.NumberOfColoursOfDisplay = numberOfColoursOfDisplay;
         }
 
@@ -19,9 +28,9 @@
             {
                 return this.displaySize;
             }
-            set
+            private set
             {
-                if (value<=0)
+                if (value <= 0)
                 {
                     throw new ArgumentException("Display Size should be bigger than Zero");
                 }
@@ -35,9 +44,9 @@
             {
                 return this.numberOfColours;
             }
-            set
+            private set
             {
-                if (value<=0)
+                if (value <= 0)
                 {
                     throw new ArgumentException("Display Colours should be bigger than Zero");
                 }

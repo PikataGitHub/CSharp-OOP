@@ -4,20 +4,19 @@
 
     public class Battery
     {
-        private BatteryType batteryType = new BatteryType();
+        private BatteryType batteryType;
         private string batteryModel;
 
-        private Stopwatch hoursIdle = new Stopwatch();
-        private Stopwatch hoursTalk = new Stopwatch();
-
-        //Remark* Stopwatch objects cannot be set to 'null' because they throw NullReferenceException *
-
-        public Battery(string modelOfBattery, BatteryType typeOfBattery)
+        public Battery(BatteryType typeOfBattery)
         {
-            this.BatteryModel = modelOfBattery;
             this.BatteryType = typeOfBattery;
-            this.HoursIdle = hoursIdle;
-            this.HoursTalk = hoursTalk;           
+            this.HoursIdle = new Stopwatch();
+            this.HoursTalk = new Stopwatch();
+        }
+
+        public Battery(string modelOfBattery, BatteryType typeOfBattery) : this(typeOfBattery)
+        {
+            this.BatteryModel = modelOfBattery;            
         }
 
         public string BatteryModel
@@ -44,28 +43,9 @@
             }
         }
 
-        public Stopwatch HoursIdle
-        {
-            get
-            {
-                return this.hoursIdle;
-            }
-            set
-            {
-                this.hoursIdle = value;
-            }
-        }
+        public Stopwatch HoursIdle { get; set; }
 
-        public Stopwatch HoursTalk
-        {
-            get
-            {
-                return this.hoursTalk;
-            }
-            set
-            {
-                this.hoursTalk = value;
-            }
-        }
+        public Stopwatch HoursTalk { get; set; }
     }
 }
+
