@@ -58,12 +58,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Battery.cs" />
-    <Compile Include="BatteryType.cs" />
-    <Compile Include="Display.cs" />
-    <Compile Include="GSM.cs" />
-    <Compile Include="MobilePhoneDeviceMain.cs" />
+    <Compile Include="Classes\Battery.cs" />
+    <Compile Include="Classes\BatteryModel.cs" />
+    <Compile Include="Classes\BatteryType.cs" />
+    <Compile Include="Classes\Call.cs" />
+    <Compile Include="Classes\Display.cs" />
+    <Compile Include="Classes\GSM.cs" />
+    <Compile Include="Classes\MobilePhoneDeviceMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\GSMCallHistoryTest.cs" />
+    <Compile Include="Tests\GSMTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
