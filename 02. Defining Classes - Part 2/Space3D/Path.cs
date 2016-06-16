@@ -1,14 +1,25 @@
 ﻿namespace Space3D
 {
     using System.Collections.Generic;
-    
+
     public class Path
     {
+        //Constructors
+
         public Path()
         {
-            this.SequenceOfPoints = new List<Point3D>();
+            this.ListOfPoints = new List<Point3D>();
         }
 
-        public List<Point3D> SequenceOfPoints { get; set; }
+        //Properties
+
+        public List<Point3D> ListOfPoints { get; set; }
+
+        //Methods
+
+        public void AddPoint(Point3D inputPoint)
+        {
+            this.ListOfPoints.Add(inputPoint);
+        }
     }
 }

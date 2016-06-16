@@ -16,6 +16,22 @@
             Console.WriteLine(zeroPoint.ToString());
 
             Console.WriteLine(CalculateDistance.GetDistanceBetween(point, zeroPoint));
+
+            string fileInputPath = @"../../Input.txt";
+
+            var grid = new Path();
+
+            grid.AddPoint(point);
+
+            grid = PathStorage.ReadFromFile(fileInputPath);
+
+            for (int i = 0; i < grid.ListOfPoints.Count; i++)
+            {
+                Console.WriteLine(grid.ListOfPoints[i]);
+            }
+
+            string fileOutputPath = @"../../Output.txt";
+            PathStorage.WriteToFile(grid, fileOutputPath);
         }
     }
 }

@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="CalculateDistance.cs" />
     <Compile Include="Path.cs" />
+    <Compile Include="PathStorage.cs" />
     <Compile Include="Point3D.cs" />
     <Compile Include="Space3DMain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
