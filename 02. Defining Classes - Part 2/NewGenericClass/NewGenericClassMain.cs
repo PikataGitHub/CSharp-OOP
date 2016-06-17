@@ -19,12 +19,16 @@
             testArray.AddAtIndex(0, 100);
             testArray.AddAtIndex(0, 1000000);
             testArray.AddAtIndex(0, -200);
-
+            
+                    
 
             Console.WriteLine(testArray.Capacity);
             Console.WriteLine(testArray.Count);
             Console.WriteLine(testArray.MinElement());
             Console.WriteLine(testArray.MaxElement());
+
+            testArray[10] = -123;
+            Console.WriteLine(testArray);
         }
     }
 }

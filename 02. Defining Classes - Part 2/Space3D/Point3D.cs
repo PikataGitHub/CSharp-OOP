@@ -1,7 +1,7 @@
 ﻿namespace Space3D
 {
     using System;
-    using System.Text;
+    using System.Text;    
 
     public struct Point3D
     {
@@ -24,7 +24,7 @@
                 return pointO;
             }
         }
-
+                
         //Properties
         public double X { get; set; }
 

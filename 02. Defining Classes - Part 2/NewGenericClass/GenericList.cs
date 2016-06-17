@@ -14,8 +14,7 @@
         public GenericList(int capacity)
         {
             this.Capacity = capacity;
-            this.listElements = new T[this.Capacity];
-            this.maxIndexOfAddedElements = 0;
+            this.listElements = new T[this.Capacity];            
         }
 
         //Properties
@@ -51,15 +50,30 @@
             this.maxIndexOfAddedElements++;
         }
 
-        public T ElementAtIndex(int index)
+        //Indexer for accessing elements
+        public T this[int index] 
         {
-            if (index >= this.maxIndexOfAddedElements || index < 0)
+            get
             {
-                throw new IndexOutOfRangeException(String.Format("Index is out of Elements range! Must be between (0;{0})! Your index: {1}!", (maxIndexOfAddedElements - 1), index));
+                if (index >= this.maxIndexOfAddedElements || index < 0)
+                {
+                    throw new IndexOutOfRangeException(String.Format("Index is out of Elements range! Must be between (0;{0})! Your index: {1}!", (maxIndexOfAddedElements - 1), index));
+                }
+                else
+                {
+                    return this.listElements[index];
+                }
             }
-            else
+            set
             {
-                return this.listElements[index];
+                if (index >= this.maxIndexOfAddedElements || index < 0)
+                {
+                    throw new IndexOutOfRangeException(String.Format("Index is out of Elements range! Must be between (0;{0})! Your index: {1}!", (maxIndexOfAddedElements - 1), index));
+                }
+                else
+                {
+                    this.listElements[index] = value;
+                }
             }
         }
 

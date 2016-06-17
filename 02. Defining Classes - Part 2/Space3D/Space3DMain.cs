@@ -32,6 +32,7 @@
 
             string fileOutputPath = @"../../Output.txt";
             PathStorage.WriteToFile(grid, fileOutputPath);
+            
         }
     }
 }

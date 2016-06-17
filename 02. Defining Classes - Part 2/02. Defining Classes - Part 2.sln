@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Space3D", "Space3D\Space3D.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewGenericClass", "NewGenericClass\NewGenericClass.csproj", "{1A97EC52-5415-4E0D-AA36-893AFE0BD7FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericMatrix", "GenericMatrix\GenericMatrix.csproj", "{0DA3A278-B857-479A-BFB3-A9C47A763A48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VersionAttribute", "VersionAttribute\VersionAttribute.csproj", "{0A99A0A3-8CE7-40BA-956D-DBC40C77AC93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{1A97EC52-5415-4E0D-AA36-893AFE0BD7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A97EC52-5415-4E0D-AA36-893AFE0BD7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A97EC52-5415-4E0D-AA36-893AFE0BD7FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DA3A278-B857-479A-BFB3-A9C47A763A48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DA3A278-B857-479A-BFB3-A9C47A763A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DA3A278-B857-479A-BFB3-A9C47A763A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DA3A278-B857-479A-BFB3-A9C47A763A48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A99A0A3-8CE7-40BA-956D-DBC40C77AC93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A99A0A3-8CE7-40BA-956D-DBC40C77AC93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A99A0A3-8CE7-40BA-956D-DBC40C77AC93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A99A0A3-8CE7-40BA-956D-DBC40C77AC93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
