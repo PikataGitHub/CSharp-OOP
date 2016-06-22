@@ -6,7 +6,7 @@
     {
         static void Main()
         {
-            GenericList<int> testArray = new GenericList<int>(4);
+            GenericList<int> testArray = new GenericList<int>(2);
            
             testArray.AddElelment(653);
             testArray.AddElelment(6543);

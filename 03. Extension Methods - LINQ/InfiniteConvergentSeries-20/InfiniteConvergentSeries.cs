@@ -11,9 +11,9 @@
             Console.Write("First Convergent Sum:  ");
             Console.WriteLine("{0:F2}", firstConvergentSum);
 
-            var secondConvergentSum = ConvergentSecondSum(index => 1 / (index - 1), 0.01);
-            Console.Write("Second Convergent Sum:  ");
-            Console.WriteLine("{0:F2}", secondConvergentSum);
+            //var secondConvergentSum = ConvergentSecondSum(index => (1 /(index - 1)), 0.01);
+            //Console.Write("Second Convergent Sum:  ");
+            //Console.WriteLine("{0:F2}", secondConvergentSum);
 
             var thirdConvergentSum = ConvergentThirdSum(index => 1 / Math.Pow(2, index - 1), 0.01);
             Console.Write("Third Convergent Sum:  ");
@@ -36,11 +36,13 @@
             return sum;
         }
 
+        //To Be tested ...
         private static double ConvergentSecondSum(Func<int, double> termValue, double precision)
         {
             double sum = 1;
             int counter = 2;
-
+            double previous = termValue(counter);
+            
             do
             {
                 sum += termValue(counter);
