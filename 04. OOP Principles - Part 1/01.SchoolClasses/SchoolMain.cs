@@ -22,8 +22,13 @@
             Console.WriteLine(CSharpAdvanced.OptionalComment);
 
             var firstGradeStudent = new Student("Dimitrov", 023563);
-            firstGradeStudent.OptionalComment = "I am the BEST";            
+            firstGradeStudent.OptionalComment = "I am the BEST Student in this Class";            
             Console.WriteLine("Optional comment:" + firstGradeStudent.OptionalComment);
+            Console.WriteLine();
+
+            //Anyone can test any feature here below ... I guess ot will work! ;)
+
+
         }
     }
 }
